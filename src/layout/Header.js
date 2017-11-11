@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import logo from '../logo.svg';
-
+import { Link } from 'react-router-dom'
 class Header extends Component {
     render() {
         return (
@@ -8,9 +8,9 @@ class Header extends Component {
                 <img src={logo} className="App-logo" alt="logo"/>
                 <h1 className="App-title">Welcome to React</h1>
                 <ul className="App-menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </header>
         );
